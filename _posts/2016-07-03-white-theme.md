@@ -1,5 +1,5 @@
 ---
-title: White Theme
+title: ...11
 layout: post
 permalink: /white/
 theme: white
