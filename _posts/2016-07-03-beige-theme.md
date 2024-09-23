@@ -1,5 +1,5 @@
 ---
-title: Beige Theme
+title: ...3
 layout: post
 permalink: /beige/
 theme: beige
