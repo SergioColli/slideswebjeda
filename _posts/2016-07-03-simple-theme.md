@@ -1,5 +1,5 @@
 ---
-title: Simple Theme
+title: ...8
 layout: post
 permalink: /simple/
 theme: simple
