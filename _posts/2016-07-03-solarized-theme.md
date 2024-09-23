@@ -1,5 +1,5 @@
 ---
-title: Solarized Theme
+title: ...10
 layout: post
 permalink: /solarized/
 theme: solarized
