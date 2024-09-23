@@ -6,6 +6,7 @@ background: '#0a5'
 
 slides:
   - title: "Unidad 2: Actuadores"
+  - image: '/images/image-1.jpg'
     slide-data: |
       Los actuadores convierten energía en movimiento. Se clasifican principalmente en tres tipos:
       - Eléctricos
