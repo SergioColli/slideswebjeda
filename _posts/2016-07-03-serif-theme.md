@@ -1,5 +1,5 @@
 ---
-title: Serif Theme
+title: ...7
 layout: post
 permalink: /serif/
 theme: serif
