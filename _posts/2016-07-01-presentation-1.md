@@ -1,5 +1,5 @@
 ---
-title: Presentation 1
+title: Actuadores
 layout: post
 permalink: /presentation-1/
 background: '#0a5'
