@@ -2,7 +2,7 @@
 title: "Unidad 2: Actuadores"
 layout: post
 permalink: /unidad-2-actuadores/
-background: '#0a5'
+image: '/images/image-1.jpg'
 
 slides:
   - title: "Unidad 2: Actuadores"
