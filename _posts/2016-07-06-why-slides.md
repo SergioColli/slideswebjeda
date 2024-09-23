@@ -11,7 +11,6 @@ slides:
       - Eléctricos
       - Mecánicos
       - Hidráulicos
-image: '/images/image-1.jpg'
 
   - title: "2.1 Eléctricos"
     slide-data: "Los actuadores eléctricos utilizan energía eléctrica para generar movimiento."
