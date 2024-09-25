@@ -7,7 +7,8 @@ background: '#0a5'
 slides:
   - title: "Unidad 2: Actuadores"
     slide-data: |
-      Los actuadores convierten energía en movimiento. Se clasifican principalmente en tres tipos:
+      Los actuadores convierten energía en movimiento.
+      Se clasifican principalmente en tres tipos:
       - Eléctricos
       - Mecánicos
       - Hidráulicos
@@ -21,7 +22,7 @@ slides:
       - Motores paso a paso
       - Servomotores
 
-  - title: "2.1.2 Funcionamiento"
+  - title: "2.1.2 Funcion"
     slide-data: "Convierte energía eléctrica en energía mecánica."
 
   - title: "2.1.3 Características"
