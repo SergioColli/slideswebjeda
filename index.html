@@ -1,51 +1,191 @@
 ---
 layout: compress
 ---
+
 <!doctype html>
 <html>
-   <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     
-        <meta name="description" content="{{ site.description }}">
-         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-		<link rel="stylesheet" href="{{site.baseurl}}/css/home.css">
-        
-		    <!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico" />
-	</head>
-   
-    <body>
-       <header>
-           <a href="{{site.baseurl}}"><div class="brand"><img class="logo" src="{{site.baseurl}}/images/webjeda-slides.svg" alt="webjeda-slides">
-           <h1 class="headline">{{site.title}}</h1></div></a>
-       </header>
-       
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/home.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
 
-       
-       
-        <div class="pack">
- 
- <p class="head-text">Diapositivas de Colli Herrera Sergio Manuel</p>
- 
-{% for post in site.posts %}                              
-                               
-    <a target="_blank" class="link" href="{{site.baseurl}}{{post.url}}"> 
-       
-        <div class="card" style="background-color: {% cycle '#e74c3c', '#1abc9c', '#e67e22', '#34495e', '#f1c40f', '#3498db', '#2ecc71', '#9b59b6' %}" >
-           <div class="card-number">
-               {{forloop.rindex}}
-           </div>
-            <div class="card-title">
-                {{ post.title | truncate: 13 }}
+    <!-- Presentation Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a5;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .slide {
+            display: none;
+        }
+        .active {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="{{ site.baseurl }}">
+            <div class="brand">
+                <img class="logo" src="{{ site.baseurl }}/images/webjeda-slides.svg" alt="webjeda-slides">
+                <h1 class="headline">{{ site.title }}</h1>
             </div>
-        </div>
-    </a>
-          
-{% endfor %}
-        </div>
-         {% include analytics.html %}
-    </body>
+        </a>
+    </header>
+
+    <div class="pack">
+        <p class="head-text">Diapositivas de Colli Herrera Sergio Manuel</p>
+
+        {% for post in site.posts %}
+            <a target="_blank" class="link" href="{{ site.baseurl }}{{ post.url }}">
+                <div class="card" style="background-color: {% cycle '#e74c3c', '#1abc9c', '#e67e22', '#34495e', '#f1c40f', '#3498db', '#2ecc71', '#9b59b6' %}">
+                    <div class="card-number">
+                        {{ forloop.rindex }}
+                    </div>
+                    <div class="card-title">
+                        {{ post.title | truncate: 13 }}
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+
+    <div id="presentation">
+        <section class="slide active">
+            <h1>Unidad 2: Actuadores</h1>
+            <p>Los actuadores convierten energía en movimiento. Se clasifican principalmente en tres tipos:</p>
+            <p>- Eléctricos<br>- Mecánicos<br>- Hidráulicos</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.1 Actuadores Eléctricos</h1>
+            <p>Utilizan energía eléctrica para generar movimiento.</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.1.1 Tipos de Motores</h1>
+            <p>- Motores DC<br>- Motores paso a paso<br>- Servomotores</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.1.2 Funcionamiento</h1>
+            <p>Convierte energía eléctrica en energía mecánica.</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.1.3 Características</h1>
+            <p>- Alta precisión<br>- Control sobre velocidad y posición</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.1.4 Comunicación</h1>
+            <p>- PWM (Modulación por Ancho de Pulso)<br>- Comunicación serial</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.2 Actuadores Mecánicos</h1>
+            <p>Generan movimiento a partir de componentes mecánicos.</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.2.1 Tipos de Componentes</h1>
+            <p>- Engranajes<br>- Resortes<br>- Poleas</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.2.2 Funcionamiento</h1>
+            <p>Movimiento generado mediante la interacción mecánica.</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.2.3 Características</h1>
+            <p>- Generalmente económicos<br>- Fiabilidad en aplicaciones simples</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.2.4 Comunicación</h1>
+            <p>Movimientos manuales o automatizados.</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.3 Actuadores Hidráulicos</h1>
+            <p>Emplean fluidos bajo presión para generar movimiento.</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.3.1 Tipos de Hidráulicos</h1>
+            <p>- Cilindros hidráulicos<br>- Motores hidráulicos</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.3.2 Funcionamiento</h1>
+            <p>Utilizan presión de fluido para mover un pistón.</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.3.3 Características</h1>
+            <p>- Fuerza muy alta<br>- Precisión baja comparado con otros actuadores</p>
+        </section>
+
+        <section class="slide">
+            <h1>2.3.4 Comunicación</h1>
+            <p>- Válvulas y controladores de flujo</p>
+        </section>
+
+        <section class="slide">
+            <h1>Fin de la Presentación</h1>
+            <p>¡Gracias!</p>
+        </section>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight') {
+                showSlide(currentSlide + 1);
+            } else if (event.key === 'ArrowLeft') {
+                showSlide(currentSlide - 1);
+            }
+        });
+    </script>
+
+    {% include analytics.html %}
+</body>
 </html>
