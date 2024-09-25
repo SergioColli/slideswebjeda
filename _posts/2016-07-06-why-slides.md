@@ -12,65 +12,65 @@ slides:
       - Mecánicos
       - Hidráulicos
 
-  - title: "2.1 Eléctricos"
-    slide-data: "Los actuadores eléctricos utilizan energía eléctrica para generar movimiento."
+  - title: "2.1 Actuadores Eléctricos"
+    slide-data: "Utilizan energía eléctrica para generar movimiento."
 
-  - title: "2.1.1 Tipos"
+  - title: "2.1.1 Tipos de Motores"
     slide-data: |
       - Motores DC
       - Motores paso a paso
       - Servomotores
 
   - title: "2.1.2 Funcionamiento"
-    slide-data: "Convierte la energía eléctrica en energía mecánica."
+    slide-data: "Convierte energía eléctrica en energía mecánica."
 
   - title: "2.1.3 Características"
     slide-data: |
       - Alta precisión
       - Control sobre velocidad y posición
 
-  - title: "2.1.4 Modo de comunicación"
+  - title: "2.1.4 Comunicación"
     slide-data: |
       - PWM (Modulación por Ancho de Pulso)
       - Comunicación serial
 
-  - title: "2.2 Mecánicos"
-    slide-data: "Los actuadores mecánicos generan movimiento a partir de componentes mecánicos."
+  - title: "2.2 Actuadores Mecánicos"
+    slide-data: "Generan movimiento a partir de componentes mecánicos."
 
-  - title: "2.2.1 Tipos"
+  - title: "2.2.1 Tipos de Componentes"
     slide-data: |
       - Engranajes
       - Resortes
       - Poleas
 
   - title: "2.2.2 Funcionamiento"
-    slide-data: "El movimiento se genera mediante la interacción mecánica entre componentes."
+    slide-data: "Movimiento generado mediante la interacción mecánica."
 
   - title: "2.2.3 Características"
     slide-data: |
       - Generalmente económicos
       - Fiabilidad en aplicaciones simples
 
-  - title: "2.2.4 Modo de comunicación"
-    slide-data: "Movimientos manuales o automatizados por mecanismos eléctricos."
+  - title: "2.2.4 Comunicación"
+    slide-data: "Movimientos manuales o automatizados."
 
-  - title: "2.3 Hidráulicos"
-    slide-data: "Los actuadores hidráulicos emplean fluidos bajo presión para generar movimiento."
+  - title: "2.3 Actuadores Hidráulicos"
+    slide-data: "Emplean fluidos bajo presión para generar movimiento."
 
-  - title: "2.3.1 Tipos"
+  - title: "2.3.1 Tipos de Hidráulicos"
     slide-data: |
       - Cilindros hidráulicos
       - Motores hidráulicos
 
   - title: "2.3.2 Funcionamiento"
-    slide-data: "Se utiliza la presión de un fluido para mover un pistón o generar torque."
+    slide-data: "Utilizan presión de fluido para mover un pistón."
 
   - title: "2.3.3 Características"
     slide-data: |
       - Fuerza muy alta
-      - Precisión baja en comparación con otros actuadores
+      - Precisión baja comparado con otros actuadores
 
-  - title: "2.3.4 Modo de comunicación"
+  - title: "2.3.4 Comunicación"
     slide-data: |
       - Válvulas y controladores de flujo
 
